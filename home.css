@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+   border-bottom: 1px solid gray;
+}
+.hero-section{
+    height: 50vh;
+    width: 100%;
+    color: white;
+    background-color: rgb(44, 42, 42);
+    border-bottom: 1px solid gray;
+}
+.title{
+    height: 100%;
+ padding-left: 50px;
+ padding-top: 50px;
+}
+.title h1{
+    font-size: 36px;
+}
+.title p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Lora", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#Projectbtn{
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#contactbtn{
+     background-color:transparent;
+    border: 2px solid black;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#contactbtn:hover{
+    background-color: black;
+    color: white;
+}
+ 
