@@ -2,55 +2,93 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Princess+Sofia&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
     <link rel="stylesheet" href="home.css" />
-    <title>Vansh Verma | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Project</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
-    </ul>
-    <div class="hero-section" id="home">
+    <nav class="navbar">
+        <div class="logo">My<span>Portfolio</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="Hero-section" id="home">
         <div class="title">
             <h1>Hi, I'm Vansh</h1>
             <h1>a Web Developer</h1>
             <p>
                 Building interactive web applications with clean and optimized code.
             </p>
-            <span class="btngroup">
-                <button id="Projectbtn">See Project</button>
-                <button id="contactbtn">Contact me</button>
-            </span>
+            <button>See Project</button><button>Contact me</button>
         </div>
-    </div>
-    <div class="about-section">
-        <h2>About me</h2>
-        <div class="about-title">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aspernatur molestias aut nobis id reprehenderit sapiente temporibus atque, soluta praesentium incidunt. Debitis quo impedit optio similique sequi. Nesciunt, et laborum?</p>
+    </section>
+    <section class="about-section" id="about">
+        <h1>About me</h1>
+        <p>
+            Hi, I’m Vansh, a passionate frontend web developer who loves building
+            clean, responsive, and user-friendly websites.
+        </p>
+        <p>
+            I specialize in creating modern web interfaces using HTML, CSS,
+            JavaScript, Bootstrap, and React. I enjoy turning ideas into real-world
+            websites and continuously learning new technologies to improve my
+            skills.
+        </p>
+    </section>
+    <section class="skill-section" id="skills">
+        <h1 id="skill">Skill</h1>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">React</div>
+    </section>
+    <section class="project-section" id="projects">
+        <h1>Project</h1>
+        <div class="project-scroll">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/f5/13/f3/f513f3b83ddd32fa05f39370758ad0ec.jpg" alt="" />
+                <h3>Portfolio</h3>
+                <p>
+                    this is a new project using html css js ialize in creating modern
+                    web interfaces using HTML CSS javascript
+                </p>
+                <button>View Project</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/f5/13/f3/f513f3b83ddd32fa05f39370758ad0ec.jpg" alt="" />
+                <h3>Portfolio</h3>
+                <p>
+                    this is a new project using html css js ialize in creating modern
+                    web interfaces using HTML CSS javascript
+                </p>
+                <button>View Project</button>
+            </div>
         </div>
-    </div>
+
+    </section>
+    <section class="footer" id="contact">
+        <h1>Contact me</h1>
+        <form>
+            <p>Name</p>
+            <input type="text"  id="name" placeholder="type your name">
+            <p>Email</p>
+            <input type="email" id="email" placeholder="enter your email">
+            <p>message</p>
+            <input type="text" id="message">
+        </form>
+    </section>
+    <footer>
+        <p>© 2026 Vansh Verma </p>
+    </footer>
 </body>
 
 </html>
