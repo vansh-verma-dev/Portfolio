@@ -82,18 +82,17 @@ body {
   padding-top: 20px;
   margin-bottom: 20px;
 }
-.title button {
+.title a {
   background-color: #38bdf8;
   border: none;
+  text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
   width: 120px;
   height: 40px;
   border-radius: 10px;
   margin-left: 10px;
-}
-.title button:hover{
-    box-shadow: 2px 2px 2px 2px aqua;
+  padding: 10px;
 }
 .image img {
   width: 340px;
@@ -103,13 +102,58 @@ body {
 /* -----------------about-section--------------- */
 .about-section {
   width: 100%;
-  height: 40vh;
+  min-height: 45vh;
   border-bottom: 1px solid gray;
   background-color: white;
+
   display: flex;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  padding: 60px 10%;
 }
+
+.about-section img {
+  width: 280px;
+  border-radius: 22px;
  
+}
+
+.about-content {
+  max-width: 520px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.cv-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.45);
+}
+
+
 /* --------------skill-section------------------ */
 .skill-section {
   height: 45vh;
@@ -205,8 +249,11 @@ body {
   height: 54vh;
   text-align: left;
   border-radius: 20px;
-  border: 2px solid black;
+  background-color: white;
   margin-top: 20px;
+}
+.project-scroll .card:hover{
+  box-shadow: 2px 5px 2px 2px rgb(99, 100, 100);
 }
 .card img {
   width: 93%;
@@ -222,11 +269,17 @@ body {
   padding-left: 30px;
 }
 .card button {
-  height: 30px;
+  height: 40px;
   width: 120px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: 30px;
   margin-top: 5px;
+  border: none;
+  background-color: #007bff;
+}
+.card button:hover{
+  background-color: #0ea5e9;
+  cursor: pointer;
 }
 /* ---------------- FOOTER SECTION ---------------- */
 .footer-section {
@@ -243,7 +296,7 @@ body {
   gap: 60px;
 }
 .footer-left {
-  margin-left: 20px;
+  margin-left: 70px;
   width: 50vw;
 }
 
@@ -503,5 +556,5 @@ footer p {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  /* scroll-padding-top: 90px; */
 }
