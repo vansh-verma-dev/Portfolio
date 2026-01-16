@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 10%;
-  background: #fff;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -62,7 +62,7 @@ body {
   width: 100%;
   border-bottom: 1px solid gray;
   display: flex;
-  background-color: white;
+  background-color: #ffffff;
 }
 .title h1 {
   font-size: 48px;
@@ -104,8 +104,7 @@ body {
   width: 100%;
   min-height: 45vh;
   border-bottom: 1px solid gray;
-  background-color: white;
-
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,9 +157,8 @@ body {
 .skill-section {
   height: 45vh;
   width: 100%;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
   text-align: center;
-  background: #ffffff;
   padding-top: 40px;
 }
 
@@ -230,7 +228,7 @@ body {
 .project-section {
   width: 100%;
   padding: 60px 0;
-  background: #f4f7f6;
+  background-color: #ffffff;
   border-bottom: 1px solid #d1d5db;
 }
 
@@ -318,7 +316,7 @@ body {
 .footer-section {
   height: 60vh;
   width: 100%;
-  background: linear-gradient(135deg, #ffffff, #fff8f8);
+  background-color: #ffffff;
   color: #000000;
   border-bottom: 2px solid gray;
 }
