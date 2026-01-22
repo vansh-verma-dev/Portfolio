@@ -116,7 +116,6 @@ body {
 .about-section img {
   width: 280px;
   border-radius: 22px;
- 
 }
 
 .about-content {
@@ -149,124 +148,124 @@ body {
 
 .cv-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(56,189,248,0.45);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.45);
 }
 /* ------------------------ Skills section--------------------*/
-#skills{
-  height: 60vh;
- background-color: white;
- color: black;
- justify-content: center;
- padding-left: 40px;
- padding-right: 40px;
-
- border-bottom: 1px solid black;
-}
-.tw-svg{
-  width: 42px;
-  margin-bottom: 16px;
-  filter: drop-shadow(0 0 6px rgba(56,189,248,0.5));
-}
-
-.section-title{
+.skill-section {
+  height: auto;
+  padding: 20px 20px;
+  background-color: #e9e8e8;
+  border-bottom: 1px solid #ddd;
   text-align: center;
-  margin-bottom: 60px;
 }
 
-.section-title h3{
-  font-size: 38px;
-  font-weight: 700;
- color: #00e5ff;
-}
-
-.section-title p{
-  margin-top: 10px;
-  color: #9aa4bf;
-  font-size: 15px;
-}
-
-/* ===== Skills Grid ===== */
-.skills-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
-   
+.skills-grid {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ===== Skill Card ===== */
-.skill{
-  background: linear-gradient(145deg, #d3d3d3, #999999);
-  padding: 30px 25px;
-  border-radius: 22px;
-  text-align: center;
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgb(173, 173, 173);
+.skill {
+  height: 260px;
+  width: 230px;
+  border-radius: 20px;
+  padding: 25px 15px;
   cursor: pointer;
+  position: relative;
+  background: #fff;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.skill-h3{
+  color: #02e1ff;
+  font-size: 34px;
 }
 
-.skill::before{
+/* Gradient border */
+.skill::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #6c63ff, #00e5ff);
+  border-radius: 20px;
+  padding: 2px;
+  mask-composite: exclude;
   opacity: 0;
-  transition: 0.35s;
-  z-index: 0;
+  transition: opacity 0.4s ease;
 }
 
-.skill:hover::before{
-  opacity: 0.08;
+.skill:hover::before {
+  opacity: 1;
 }
 
-.skill:hover{
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(108,99,255,0.35);
+/* Card hover effect */
+.skill:hover {
+  background: linear-gradient(135deg, #525151, #3a3a3a);
+  transform: translateY(-12px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.35);
 }
 
 /* ===== Icon ===== */
-.skill i{
-  font-size: 38px;
-  margin-bottom: 18px;
-  color: #6c63ff;
-  transition: 0.35s;
-  z-index: 1;
-  position: relative;
+.skill i {
+  font-size: 52px;
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: transform 0.6s cubic-bezier(.68,-0.55,.27,1.55),
+    color 0.4s ease;
 }
 
-.skill:hover i{
-  color: #00e5ff;
-  transform: rotate(6deg) scale(1.1);
+/* Icon animation on card hover */
+.skill:hover i {
+  color: #02e1ff;
+  transform: translateY(-10px) rotate(8deg);
 }
 
 /* ===== Text ===== */
-.skill h4{
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  z-index: 1;
-  position: relative;
+.skill h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #111;
+  transition: color 0.3s ease;
 }
 
-.skill p{
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ffffff;
-  z-index: 1;
-  position: relative;
+.skill p {
+  font-size: 0.95rem;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
-/* ===== Responsive ===== */
-@media(max-width: 600px){
-  #skills{
-    padding: 70px 5%;
+.skill:hover h4,
+.skill:hover p {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
-  .section-title h3{
-    font-size: 30px;
+
+  .skill {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .skill i {
+    font-size: 40px;
+  }
+
+  .skill h4 {
+    font-size: 1.1rem;
+  }
+
+  .skill p {
+    font-size: 0.85rem;
   }
 }
-
 
 /* ------------Project-section--------------- */
 .project-section {
@@ -279,7 +278,7 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 50px;
-   color: #38bdf8;
+  color: #38bdf8;
   letter-spacing: 1px;
   position: relative;
 }
@@ -309,13 +308,15 @@ body {
   border-radius: 20px;
   overflow: hidden;
   scroll-snap-align: start;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Image ===== */
@@ -355,7 +356,9 @@ body {
   color: #fff;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .card button:hover {
@@ -424,7 +427,7 @@ body {
 }
 
 .social-icons a {
-  font-size: 20px;
+  font-size: 30px;
   color: #000000;
   margin-right: 15px;
   transition: 0.3s;
@@ -586,7 +589,6 @@ footer p {
   .slill-icon {
     flex-wrap: wrap;
     gap: 20px;
-
   }
 
   .skill img {
@@ -685,14 +687,13 @@ html {
   }
 }
 @media (max-width: 768px) {
-
   .project-scroll {
     gap: 20px;
     padding: 20px 16px 40px;
   }
 
   .project-scroll .card {
-    flex: 0 0 88%;        /* One card fully visible */
+    flex: 0 0 88%; /* One card fully visible */
     height: auto;
   }
 
@@ -701,7 +702,7 @@ html {
   }
 }
 
-.vanh{
+.vanh {
   color: black;
   background-color: darkblue;
 }
