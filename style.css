@@ -151,13 +151,16 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(56,189,248,0.45);
 }
-/* ===== Skills Section ===== */
+/* ------------------------ Skills section--------------------*/
 #skills{
+  height: 60vh;
  background-color: white;
  color: black;
  justify-content: center;
  padding-left: 40px;
  padding-right: 40px;
+
+ border-bottom: 1px solid black;
 }
 .tw-svg{
   width: 42px;
@@ -187,17 +190,20 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
+   
 }
 
 /* ===== Skill Card ===== */
 .skill{
-  background: linear-gradient(145deg, #12172a, #0e1324);
+  background: linear-gradient(145deg, #d3d3d3, #999999);
   padding: 30px 25px;
   border-radius: 22px;
   text-align: center;
   transition: all 0.35s ease;
   position: relative;
   overflow: hidden;
+  border: 1px solid rgb(173, 173, 173);
+  cursor: pointer;
 }
 
 .skill::before{
@@ -246,7 +252,7 @@ body {
 .skill p{
   font-size: 14px;
   line-height: 1.6;
-  color: #9aa4bf;
+  color: #ffffff;
   z-index: 1;
   position: relative;
 }
@@ -580,6 +586,7 @@ footer p {
   .slill-icon {
     flex-wrap: wrap;
     gap: 20px;
+
   }
 
   .skill img {
