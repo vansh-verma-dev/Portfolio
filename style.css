@@ -788,3 +788,8 @@ html {
     padding-left: 15px;
   }
 }
+
+ .projects-card h3 i{
+  color: rgb(100, 100, 7);
+  font-size: 30px;
+ }
