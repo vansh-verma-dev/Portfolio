@@ -2,26 +2,37 @@
 <html lang="en">
 
 <head>
+  <!-- ===== BASIC META ===== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== STYLES ===== -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- ===== PWA ===== -->
   <link rel="manifest" href="/Portfolio/manifest.json">
   <meta name="theme-color" content="#000000">
+
+  <!-- ===== ICON ===== -->
   <link rel="icon" href="assits/Vansh Verma.png">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+
   <title>Vansh | Web Developer</title>
 </head>
 
 <body>
+
+  <!-- ================= NAVBAR ================= -->
   <nav class="navbar">
     <div class="logo">Vansh<span>Verma</span></div>
-    <ul class="nav-links">
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -29,137 +40,166 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <section class="Hero-section" id="home">
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="Hero-section reveal" id="home">
     <div class="title">
       <h1>Hi, I'm Vansh</h1>
       <h1>a Web Developer</h1>
       <p>
-        Building interactive web applications with clean and optimized code.
+        Building clean, responsive and user-friendly web experiences.
       </p>
-      <a href="#projectbtn">See Project</a> <a href="#hire">Let’s Work Together</a>
+
+      <a href="#projects">See Projects</a>
+      <a href="#hire">Let’s Work Together</a>
     </div>
+
     <div class="image">
-      <img src="https://i.pinimg.com/736x/9f/9d/ed/9f9ded3b0dd6794036eff48c79e6e040.jpg" alt="">
+      <img src="https://i.pinimg.com/736x/9f/9d/ed/9f9ded3b0dd6794036eff48c79e6e040.jpg" alt="Developer Image">
     </div>
   </section>
-  <section class="about-section" id="about">
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="about-section reveal" id="about">
+
     <div class="images">
-      <img src="https://i.pinimg.com/1200x/be/3d/ba/be3dba31d449f0ba9c00ab8f9e2d603f.jpg" alt="Vansh Web Developer">
-    <!-- <img src="assits/my.png" alt=""> -->
+      <img src="https://i.pinimg.com/1200x/be/3d/ba/be3dba31d449f0ba9c00ab8f9e2d603f.jpg" alt="Vansh Verma">
     </div>
 
     <div class="about-content">
       <h2>About Me</h2>
 
       <p>
-         I'm Vansh, a passion frontend web developer focused on building
+        I’m Vansh, a passionate frontend web developer focused on building clean,
+        modern and responsive user interfaces.
       </p>
 
       <p>
-    I’m Vansh, a passionate frontend web developer focused on building clean, responsive, and user-friendly web interfaces.
+        I enjoy turning ideas into real-world web applications using HTML, CSS,
+        JavaScript and React with attention to performance and design.
       </p>
 
       <p>
-      Currently, I’m open to freelance projects, collaborations, and entry-level opportunities where I can learn and contribute.
+        Currently open to freelance work, collaborations and entry-level
+        opportunities to grow and contribute.
       </p>
 
-      <a href="../assits/resume.pdf" class="cv-btn" download>
+      <a href="assits/resume.pdf" class="cv-btn" download>
         <i class="fa-solid fa-download"></i> Download CV
       </a>
-      <a href="" class="cv-btn">Check My CV</a>
+      <a href="#" class="cv-btn">Check My CV</a>
     </div>
+
   </section>
 
-  <section id="skills" class="skill-section">
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="skill-section reveal">
     <h3 class="skill-h3">Skills</h3>
-    </div>
+
     <div class="skills-grid">
-      <div class="skill"><i class="fab fa-html5"></i>
+      <div class="skill">
+        <i class="fab fa-html5"></i>
         <h4>HTML</h4>
         <p>Semantic & SEO friendly structure</p>
       </div>
-      <div class="skill"><i class="fab fa-css3-alt"></i>
-        <h4>CSS</h4>
-        <p>Modern layouts, animations</p>
-      </div>
-      <div class="skill"><i class="fab fa-js"></i>
-        <h4>JavaScript</h4>
-        <p>Interactive & dynamic UI</p>
-      </div>
-      <div class="skill"><i class="fab fa-react"></i>
-        <h4>React</h4>
-        <p>Component based architecture</p>
-      </div>
-      <div class="skill"><i class="fa-brands fa-bootstrap"></i>
-        <h4>Bootstrap</h4>
-        <p>Mobile-first responsive design</p>
-      </div>
-  </section>
-  <section class="project-section" id="projects">
-    <h1 id="projectbtn">Project</h1>
-    <p class="project-hrading">Recent Project</p>
-    <div class="project-scroll">
-      <div class="projects-card">
-        <img src="assits/ChatGPT Image Jan 16, 2026, 06_48_16 PM.png" alt="" />
-        <h3>VOGUE – Luxury Women’s Fashion UI</h3>
-        <p>
-          A premium fashion website UI showcasing modern layouts, elegant design, and responsive user experience for
-          women’s luxury clothing.
-        </p>
-        <a href=" https://vansh-verma-dev.github.io/vogue-fashion-vansh/" target="_blank"> <button>View
-            Project</button></a>
 
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <h4>CSS</h4>
+        <p>Modern layouts & animations</p>
       </div>
-      <div class="projects-card">
-        <img src="assits/projectimg.PNG" alt="" />
-        <h3>JavaScript Projects</h3>
-        <p>
- A collection of interactive JavaScript mini projects showcasing dynamic web features, DOM manipulation, and practical logic, including apps like calculators, to-do lists, and small games for hands-on coding experience.
-        </p>
-        <a href="https://javascript-mini-project.onrender.com" target="_blank">       <button>Explore JavaScript Work</button></a>
- 
+
+      <div class="skill">
+        <i class="fab fa-js"></i>
+        <h4>JavaScript</h4>
+        <p>Dynamic & interactive UI</p>
       </div>
-      
+
+      <div class="skill">
+        <i class="fab fa-react"></i>
+        <h4>React</h4>
+        <p>Component-based architecture</p>
+      </div>
+
+      <div class="skill">
+        <i class="fa-brands fa-bootstrap"></i>
+        <h4>Bootstrap</h4>
+        <p>Responsive mobile-first design</p>
+      </div>
     </div>
   </section>
- 
-  <section class="footer-section" id="contact">
+
+  <!-- ================= PROJECT SECTION ================= -->
+  <section class="project-section reveal" id="projects">
+    <h1 id="projectbtn">Projects</h1>
+    <p class="project-hrading">Recent Work</p>
+
+    <div class="project-scroll">
+
+      <!-- Project 1 -->
+      <div class="projects-card">
+        <img src="assits/ChatGPT Image Jan 16, 2026, 06_48_16 PM.png" alt="">
+        <h3>VOGUE – Luxury Fashion UI</h3>
+        <p>
+          A premium fashion website UI featuring modern layouts, elegant design
+          and responsive user experience.
+        </p>
+        <a href="https://vansh-verma-dev.github.io/vogue-fashion-vansh/" target="_blank">
+          <button>View Project</button>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="projects-card">
+        <img src="assits/projectimg.PNG" alt="">
+        <h3>JavaScript Mini Projects</h3>
+        <p>
+          Interactive JavaScript projects including calculators, to-do apps
+          and small games using DOM manipulation.
+        </p>
+        <a href="https://javascript-mini-project.onrender.com" target="_blank">
+          <button>Explore Work</button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT / FOOTER SECTION ================= -->
+  <section class="footer-section reveal" id="contact">
     <div class="footer-container">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT -->
       <div class="footer-left">
         <h2>Vansh Verma</h2>
         <p class="role">Frontend Web Developer</p>
 
         <p class="desc">
-          I’m a passionate web developer specializing in building modern,
-          responsive, and user-friendly websites. I help individuals and
-          businesses turn their ideas into high-quality digital experiences.
+          I build modern, responsive and user-friendly websites that help
+          individuals and businesses grow online.
         </p>
 
         <div class="footer-details">
-          <p><strong>Email:</strong>vanshverma6065@gmail.com</p>
-          <p><strong>Location:</strong> India (Meerut)</p>
+          <p><strong>Email:</strong> vanshverma6065@gmail.com</p>
+          <p><strong>Location:</strong> Meerut, India</p>
           <p><strong>Availability:</strong> Open for Freelance & Projects</p>
-
-
         </div>
 
         <div class="social-icons">
-          <a href="https://github.com/dashboard" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href=" https://www.instagram.com/igvanshverma" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/igvanshverma"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
+      <!-- RIGHT -->
       <div class="footer-right">
         <h2 id="hire">Get In Touch</h2>
+
         <form class="contact-form">
-          <input type="text" placeholder="Your Name" required id="input">
-          <input type="email" placeholder="Your Email" required id="email">
-          <textarea placeholder="Tell me about your project..." required id="msg"></textarea>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Tell me about your project..." required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -167,8 +207,12 @@
     </div>
   </section>
 
+  <!-- ================= COPYRIGHT ================= -->
   <footer>
     <p>© 2026 Vansh Verma. All Rights Reserved.</p>
   </footer>
+
+  
 </body>
+<script src="main.js"></script>
 </html>
