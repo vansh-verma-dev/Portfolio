@@ -58,10 +58,11 @@ body {
 }
 /* --------------Hero-Section-------------- */
 .Hero-section {
-  height: 45vh;
+  height: 50vh;
   width: 100%;
   border-bottom: 1px solid gray;
   display: flex;
+  justify-content: space-around;
   background-color: #ffffff;
 }
 .title h1 {
@@ -74,12 +75,13 @@ body {
 }
 .title {
   height: 100%;
-  margin: 40px;
+ padding-top: 10px;
 }
 
 .title p {
+  font-style: italic;
   font-size: 22px;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-bottom: 20px;
 }
 .title a {
@@ -96,7 +98,7 @@ body {
 }
 .image img {
   width: 340px;
-  height: 280px;
+  height: 260px;
   margin-left: 20px;
 }
 /* -----------------about-section--------------- */
@@ -107,7 +109,7 @@ body {
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 60px;
 
   padding: 60px 10%;
@@ -144,6 +146,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
+  margin-left: 20px;
 }
 
 .cv-btn:hover {
@@ -388,7 +391,7 @@ font-weight: bold;
 
 /* ---------------- FOOTER SECTION ---------------- */
 .footer-section {
-  height: 60vh;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
   color: #000000;
@@ -571,8 +574,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  /* HERO SECTION */
+ 
   .Hero-section {
     height: auto;
     flex-direction: column;
@@ -595,15 +597,18 @@ footer p {
   .title button {
     margin: 8px 5px;
   }
-
-  /* ABOUT */
+ 
   .about-section {
     height: auto;
     padding: 40px 20px;
     text-align: center;
   }
-
-  /* SKILLS */
+  .about-content p{
+    text-align: left;
+    padding-left: 20px;
+    font-style: italic;
+  }
+ 
   .skill-section {
     height: auto;
     padding-bottom: 40px;
