@@ -2,36 +2,27 @@
 <html lang="en">
 
 <head>
-  <!-- ===== BASIC META ===== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ===== STYLES ===== -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-  <!-- ===== PWA ===== -->
   <link rel="manifest" href="/Portfolio/manifest.json">
   <meta name="theme-color" content="#000000">
-
-  <!-- ===== ICON ===== -->
   <link rel="icon" href="assits/Vansh Verma.png">
-
   <title>Vansh | Web Developer</title>
 </head>
 
 <body>
-
-  <!-- ================= NAVBAR ================= -->
+ 
   <nav class="navbar">
     <div class="logo">Vansh<span>Verma</span></div>
 
-    <!-- Mobile Menu Button -->
+  
     <div class="menu-btn" id="menuBtn">
       <i class="fa-solid fa-bars"></i>
     </div>
-
-    <!-- Navigation Links -->
+ 
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -41,7 +32,7 @@
     </ul>
   </nav>
 
-  <!-- ================= HERO SECTION ================= -->
+ 
   <section class="Hero-section reveal" id="home">
     <div class="title">
       <h1>Hi, I'm Vansh</h1>
@@ -50,16 +41,15 @@
         Building clean, responsive and user-friendly web experiences.
       </p>
 
-      <a href="#projects">See Projects</a>
-      <a href="#hire">Let’s Work Together</a>
+      <a href="#projects"><button>See Projects</button></a> 
+      <a href="#hire" id="hirebtn"><button>Let's Work Together</button></a>
     </div>
 
-    <div class="image">
+    <div class="image my-img">
       <img src="https://i.pinimg.com/736x/9f/9d/ed/9f9ded3b0dd6794036eff48c79e6e040.jpg" alt="Developer Image">
     </div>
   </section>
-
-  <!-- ================= ABOUT SECTION ================= -->
+ 
   <section class="about-section reveal" id="about">
 
     <div class="images">
@@ -84,15 +74,17 @@
         opportunities to grow and contribute.
       </p>
 
-      <a href="assits/resume.pdf" class="cv-btn" download>
+     <div class="about-btngroup">
+       <a href="assits/resume.pdf" class="cv-btn" download>
         <i class="fa-solid fa-download"></i> Download CV
       </a>
       <a href="#" class="cv-btn">Check My CV</a>
+     </div>
     </div>
 
   </section>
 
-  <!-- ================= SKILLS SECTION ================= -->
+   
   <section id="skills" class="skill-section reveal">
     <h3 class="skill-h3">Skills</h3>
 
@@ -129,47 +121,54 @@
     </div>
   </section>
 
-  <!-- ================= PROJECT SECTION ================= -->
+ 
   <section class="project-section reveal" id="projects">
     <h1 id="projectbtn">Projects</h1>
-    <p class="project-hrading">Recent Work</p>
-
     <div class="project-scroll">
 
       <!-- Project 1 -->
-      <div class="projects-card">
-        <img src="assits/ChatGPT Image Jan 16, 2026, 06_48_16 PM.png" alt="">
-        <h3>VOGUE – Luxury Fashion UI</h3>
-        <p>
-          A premium fashion website UI featuring modern layouts, elegant design
-          and responsive user experience.
-        </p>
-        <a href="https://vansh-verma-dev.github.io/vogue-fashion-vansh/" target="_blank">
-          <button>View Project</button>
-        </a>
+  <div class="project-section-card">
+        <img src="https://i.pinimg.com/1200x/e1/77/f9/e177f974393c8363ab188abc42311cbc.jpg" alt="" />
+        <h1>Personal Portfolio Website</h1>
+        <p>A responsive website to showcase my project & skill</p>
+        <h2>Features</h2>
+        <p><i class="fa-solid fa-circle"></i> Responsive layout</p>
+        <p><i class="fa-solid fa-circle"></i> Smooth navigation</p>
+        <p><i class="fa-solid fa-circle"></i> project showcase</p>
+        <h2>Tech: 
+          <span>HTML</span>
+           <span style="background-color: rgb(189, 189, 255);">CSS</span>
+            <span style="background-color: rgb(255, 255, 179);">JAVASCRIPT</span></h2>
+        <div class="btn-group">
+          <a href="https://portfolio-vyj8.onrender.com" target="_blank"><button class="livebtn"> Live Demo</button></a>
+          <a href="https://github.com/vansh-verma-dev/Portfolio.git" target="_blank"><button class="githubbtn">GitHub</button></a>
+        </div>
       </div>
-
-      <!-- Project 2 -->
-      <div class="projects-card">
-        <img src="assits/projectimg.PNG" alt="">
-        <h3>JavaScript Mini Projects</h3>
-        <p>
-          Interactive JavaScript projects including calculators, to-do apps
-          and small games using DOM manipulation.
-        </p>
-        <a href="https://javascript-mini-project.onrender.com" target="_blank">
-          <button>Explore Work</button>
-        </a>
+ 
+           <!-- Project 2 -->
+  <div class="project-section-card">
+        <img src="https://i.pinimg.com/1200x/e1/77/f9/e177f974393c8363ab188abc42311cbc.jpg" alt="" />
+        <h1>Government ITI College Portal</h1>
+        <p>Developed a responsive information portal for a Government ITI college to manage notices, admissions, courses and student information in a structured way</p>
+        <h2>Features</h2>
+        <p><i class="fa-solid fa-circle"></i> Admission form layout</p>
+        <p><i class="fa-solid fa-circle"></i> Course & trade details section</p>
+        <p><i class="fa-solid fa-circle"></i> Contact + location map integration</p>
+        <h2>Tech: 
+          <span>HTML</span>
+           <span style="background-color: rgb(189, 189, 255);">CSS</span>
+            <span style="background-color: rgb(255, 255, 179);">JAVASCRIPT</span></h2>
+        <div class="btn-group">
+          <a href="https://govt-iti-college.onrender.com" target="_blank"><button class="livebtn"> Live Demo</button></a>
+          <a href="https://github.com/vansh-verma-dev/Govt.ITI-College.git" target="_blank"><button class="githubbtn">GitHub</button></a>
+        </div>
       </div>
-
-    </div>
   </section>
 
-  <!-- ================= CONTACT / FOOTER SECTION ================= -->
+ 
   <section class="footer-section reveal" id="contact">
     <div class="footer-container">
-
-      <!-- LEFT -->
+ 
       <div class="footer-left">
         <h2>Vansh Verma</h2>
         <p class="role">Frontend Web Developer</p>
@@ -191,8 +190,7 @@
           <a href="https://www.instagram.com/igvanshverma"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-
-      <!-- RIGHT -->
+ 
       <div class="footer-right">
         <h2 id="hire">Get In Touch</h2>
 
@@ -207,7 +205,7 @@
     </div>
   </section>
 
-  <!-- ================= COPYRIGHT ================= -->
+   
   <footer>
     <p>© 2026 Vansh Verma. All Rights Reserved.</p>
   </footer>
