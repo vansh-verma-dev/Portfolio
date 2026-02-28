@@ -84,7 +84,7 @@ body {
 }
 
 .title h1 {
-  font-size: 46px;
+  font-size: 66px;
 }
 
 .title h1:nth-child(2) {
@@ -92,7 +92,7 @@ body {
 }
 
 .title p {
-  font-size: 20px;
+  font-size: 26px;
   margin: 15px 0 25px;
   font-style: italic;
 }
@@ -109,11 +109,10 @@ body {
   border: none;
   margin-top: 10px;
 }
- 
-
-.title a:hover {
-  background: #0ea5e9;
-}
+ .title a button:hover{
+  padding: 13px;
+  cursor: pointer;
+ }
 
 .image img {
   width: 330px;
@@ -490,8 +489,14 @@ footer {
   }
 
   .Hero-section {
-    flex-direction: column;
-    text-align: left;
+   min-height: 40vh;
+  background: #ffffff;
+  border-bottom: none;
+  padding: 10px 2%;
+  padding-left: 30px;
+  }
+  .title h1{
+  font-size: 40px;
   }
 
   .about-section {
@@ -512,4 +517,16 @@ footer {
 }
 .about-btngroup{
   display: flex;
+}
+
+#typing::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
