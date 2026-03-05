@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
-
+ 
 html {
   scroll-behavior: smooth;
 }
@@ -170,7 +170,7 @@ body {
 .skill-section {
   height: auto;
   padding: 20px 20px;
-  background-color: #e9e8e8;
+  background-color: #f7f5f5;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
@@ -447,16 +447,7 @@ body {
 }
 
 /*--------SCROLL ANIMATION--------*/
-.reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+ 
 footer {
   display: flex;
   align-items: center;
